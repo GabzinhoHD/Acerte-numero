@@ -55,3 +55,8 @@ h3{
     margin: 20px
 }
 
+h2{
+    font-size: 4em;
+    color: var(--carmesim);
+    text-shadow: var(--azul);
+}

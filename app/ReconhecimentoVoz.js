@@ -7,6 +7,7 @@ recognition.lang = "pt-br";
 recognition.start()
 
 recognition.addEventListener("result", onSpeak)
+recognition.addEventListener("end", () => recognition.start())
 function onSpeak(e){
    chute = (e.results[0][0].transcript)
    exibeChute(chute)
@@ -17,6 +18,5 @@ function exibeChute(chute){
   Elementchute.innerHTML = ` 
   <div> Você disse:</div>
   <span class="box">${chute}</span>
-  <div>O número secreto é maior </div>
   `
 }

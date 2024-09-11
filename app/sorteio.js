@@ -6,7 +6,9 @@ function gerarNumero() {
     return parseInt(Math.random() * maiorValor + 1)
 }
 
-const elementoMenor = document.getElementById('menor-valor')
-elementoMenor.innerHTML = menorValor
-const elementoMaior = document.getElementById("maior-valor")
-elementoMaior.innerHTML = maiorValor
+console.log(numeroSecreto)
+
+const ElementMenor = document.getElementById("menor-valor")
+ElementMenor.innerHTML = menorValor
+const ElementMaior = document.getElementById("maior-valor")
+ElementMaior.innerHTML = maiorValor
